@@ -33,7 +33,7 @@
 			<section id="intro" class="wrapper style1 fullscreen fade-up">
 				<div class="inner">
 					<h1>Nasim MM</h1>
-					<p>I'm a third year Eletrical and Electronic Engineering student at Imperial College London. Welcome to my personal portfolio! </p>
+<!--					<p>I'm a third year Eletrical and Electronic Engineering student at Imperial College London. Welcome to my personal portfolio! </p>-->
 					
 <!--				Rotating Text	-->
 					<p><span id="rotate">placeholder</span></p>
@@ -42,7 +42,7 @@
 						var terms = ["I'm a third year Eletrical and Electronic Engineering student at Imperial College London.", "Welcome to my personal portfolio!"];
 						function rotateTerm() {
 							var ct = $("#rotate").data("term") || 0;
-							$("#rotate").data("term", ct == terms.length -1 ? 0 : ct + 1).text(terms[ct]).fadeIn().delay(4500).fadeOut(500, rotateTerm);
+							$("#rotate").data("term", ct == terms.length -1 ? 0 : ct + 1).text(terms[ct]).fadeIn().delay(3500).fadeOut(500, rotateTerm);
 						}
 						rotateTerm();
 					</script>
