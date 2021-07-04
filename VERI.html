@@ -1,12 +1,7 @@
 <!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
-		<title>Project - Nasim MM</title>
+		<title>Vector Network Analyser</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -15,49 +10,78 @@
 	<body class="is-preload">
 
 		<!-- Header -->
-			<header id="header">
-				<a href="index.html" class="title">Nasim MM - Hyperspace</a>
-				<nav>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="page1.html" class="active">Project</a></li>
-						<li><a href="elements.html">Elements</a></li>
-					</ul>
-				</nav>
-			</header>
+		<header id="header">
+			<a href="index.html" class="title">Nasim MM Portfolio</a>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="index.html#one" class="active">Projects</a></li>
+<!--					<li><a href="elements.html">Elements</a></li>-->
+				</ul>
+			</nav>
+		</header>
 
 		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Main -->
-					<section id="main" class="wrapper">
-						<div class="inner">
-							<h1 class="major">6502 Breadboard PC</h1>
-							<!--><span class="image fit"><img src="" alt="" /></span><!-->
-							<p>Paragraph 1</p>
-							<p>Paragraph 2</p>
+		<div id="wrapper">
+			<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="inner">
+					
+					<h1 class="major">Vector Network Analyser</h1>
+					<span class="image fit"><img src="images/VNAoverview.png" alt="" /></span>
+					
+					<div style="display: flex; width: 100%; height: 100%;">
+						
+						<div style="width: 80%; height: 100%; padding: 0 3% 0% 0%">
+						  <p>This project was the final coursework for my Instrumentation Module. </p>
+						  <p>The task was to design and simulate a Network Analyser able to calculate the Y and Z parameters of a 2 port device. This project involved heavy use of LTSpice and MATLAB. LTSpice was used to design and simulate the system and create/collect the data for the circuits. The data was then imported into MATLAB where the functions of the Vector Network Analyser were then simulated in a MATLAB script to calculate the Y and Z parameters. </p>
+						  <p>Below are lower level designs outlining the specific designs of building blocks I used for the overall system. the first image shows a dual input differential amplifer setup used to amplify voltage differences across the current sense resistors. The middle block is a 2nd order low pass filter and the right block is a mixer used to form the basis of the In-Phase and Quadrature modulation blocks.</p>
+					  </div>
+						
+						<div style="width: 20%; height: 100%; display: flex; flex-direction: column;">
+							<span class="image fit"><img src="images/LTspice-logo.jpg" alt="" /></span>
+							<span class="image fit"><img src="images/Matlab-Logo.png" alt="" /></span>
 						</div>
-					</section>
+						
+					</div>
 
-			</div>
+					
+					<div class="row gtr-uniform">
+						
+						<div class="col-4">
+							<span class="image fit"><img src="images/VNADiffAmp.png" alt="" /></span>
+						</div>
+						<div class="col-4">
+							<span class="image fit"><img src="images/VNALPF.png" alt="" /></span>
+						</div>
+						<div class="col-4">
+							<span class="image fit"><img src="images/VNAMixer.png" alt="" /></span>
+						</div>
+						
+					</div>
+					
+					
+				</div>
+			</section>
+		</div>
 
 		<!-- Footer -->
-			<footer id="footer" class="wrapper alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; All rights reserved | Based on the Hyperspace template from HTML5UP | Nasim MM</li>
-					</ul>
-				</div>
-			</footer>
+		<footer id="footer" class="wrapper alt">
+			<div class="inner">
+				<ul class="menu">
+					<li>&copy; All rights reserved | Based on the Hyperspace template from HTML5UP | Nasim MM</li>
+				</ul>
+			</div>
+		</footer>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
