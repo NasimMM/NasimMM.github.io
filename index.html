@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Nasim MM Portfolio</title>
+		<title>Nasim M Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -17,10 +17,11 @@
 				<nav>
 					<ul>
 						<li><a href="#intro">Welcome</a></li>
-						<li><a href="#one">Highlights</a></li>
-						<li><a href="#two">Overview</a></li>
-<!--						<li><a href="#three">Education</a></li>-->
-						<li><a href="#four">Contact</a></li>
+						<li><a href="#three">Overview</a></li>
+						<li><a href="#one">Projects</a></li>
+						<li><a href="#four">Education</a></li>
+						<li><a href="#two">University Projects</a></li>
+						<li><a href="#five">Contact</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -28,167 +29,58 @@
 
 		<!-- Wrapper -->
 		<div id="wrapper">
-
+			
 			<!-- Intro Section -->
 			<section id="intro" class="wrapper style1 fullscreen fade-up">
 				<div class="inner">
-					<h1>Nasim MM</h1>
-<!--					<p>I'm a third year Eletrical and Electronic Engineering student at Imperial College London. Welcome to my personal portfolio! </p>-->
-					
-<!--				Rotating Text	-->
-					<p><span id="rotate">placeholder</span></p>
+					<h1>Nasim M</h1>
+					<!-- Rotating Text -->
+					<p><span id="rotate">Welcome to my personal portfolio!</span></p> <!-- PlaceHolder Text -->
 					<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 					<script>
-						var terms = ["I'm a Final Year Eletrical and Electronic Engineering student at Imperial College London.", "Welcome to my personal portfolio!"];
+						var terms = ["Hi, I'm an Electrical Engineer working in the Water Sector with Mott MacDonald.", "Welcome to my personal portfolio!"];
 						function rotateTerm() {
 							var ct = $("#rotate").data("term") || 0;
 							$("#rotate").data("term", ct == terms.length -1 ? 0 : ct + 1).text(terms[ct]).fadeIn().delay(3500).fadeOut(500, rotateTerm);
 						}
 						rotateTerm();
 					</script>
-					
-<!--					<p>Potential Projects to list here: IBM Mood of the Nation, Veri (Lab), Amp (Lab), RaspPi Project (Embedded CW1), Synthesizer (Embedded CW2), Simulated VNA (Instr CW), RTDSP simulink stuff?, Breadboard PC, </p>-->
-					
 					<ul class="actions">
 					  <li><a href="#one" class="button scrolly">Learn More</a></li>
 					</ul>
 				</div>
 			</section>
-
-
-			<!-- Sub Section One: Projects -->
-			<section id="one" class="wrapper style2 spotlights">
-
-				<!-- Project:  IBM - Mood of the Nation -->
-				<section>
-					<a href="/MoodoftheNation.html" class="image"><img src="/images/Picture1.png" data-position="top center" alt=""/></a>
-					<div class="content">
-						<div class="inner">
-							<h2>Mood of the Nation - IBM</h2>
-							<p>A web-application that analyses and visualises data collected from twitter. Front-end designed using HTML, CSS & JavaScript and Back-end designed on NodeRED.</p>
-							<!--							<p><i>Skills: NodeRED, Javascript, HTML & CSS</i></p>-->
-							<ul class="actions">
-								<li><a href="/MoodoftheNation.html" class="button">Learn more</a></li>
-							</ul>
-						</div>
-					</div>
-				</section>
-
-				<!-- Project: Pharmacueticals  -->
-				<section>
-					<a href="/RPi.html" class="image"><img src="images/20210223_114305.jpg" alt="" data-position="25% 25%" /></a>
-					<div class="content">
-						<div class="inner">
-							<h2>Pharmaceuticals Monitoring System - IoT</h2>
-							<p>A cheap, wireless, monitoring system designed to detect environmental changes and monitor the condition of sensitive medical payloads.</p>
-<!--							<p><i>Skills: Python</i></p>-->
-							<ul class="actions">
-							<li><a href="/RPi.html" class="button">Learn more</a></li>
-							</ul>
-						</div>
-					</div>
-				</section>
-				
-				<!-- Project: VNA Instrumentation -->
-				<section>
-					<a href="VNA.html" class="image"><img src="images/VNAoverview.png" alt="" data-position="" /></a>
-					<div class="content">
-						<div class="inner">
-							<h2>Vector Network Analyser</h2>
-							<p>A Vector Network Anaylser simulated on LTSpice and MATLAB designed to calculate the Y and Z parameters of 2 port/3 terminal devices. </p>
-							<ul class="actions">
-								<li><a href="/VNA.html" class="button">Learn more</a></li>
-							</ul>
-						</div>
-					</div>
-				</section>
-				
-			</section>
-			<section class="wrapper style2 spotlights">
-				
-				<!-- Project: Breadboard PC -->
-				<section>
-					<a href="/breadboardPC.html" class="image"><img src="images/20210629_154308.jpg" data-position="center center" alt=""/></a>
-					<div class="content">
-						<div class="inner">
-							<h2>Breadboard PC</h2>
-							<p>A breadboard computer based on the 6502 microprocessor family. Designed from discrete parts and assembled on breadboard.</p>
-							<ul class="actions">
-								<li><a href="/breadboardPC.html" class="button">Learn more</a></li>
-							</ul>
-						</div>
-					</div>
-				</section>
-
-				<!-- Project: Synthesizer for Embedded -->
-<!--
-				<section>
-					<a href="Synth.html" class="image"><img src="images/20210629_142421.jpg" alt="" data-position="" /></a>
-					<div class="content">
-						<div class="inner">
-							<h2>Synthesizer</h2>
-							<p>An electronic synthesizer programmed for my Embedded Systems Module using real-time programming techniques.</p>
-							<ul class="actions">
-								<li><a href="/Synth.html" class="button">Learn more</a></li>
-							</ul>
-						</div>
-					</div>
-				</section>
--->
-				
-				<!-- Project: AMP -->
-				<section>
-					<a href="AMP.html" class="image"><img src="images/AMP/Amp1.jpeg" data-position="center center" alt=""/></a>
-					<div class="content">
-						<div class="inner">
-							<h2>AMP Lab</h2>
-							<p>A high gain, low-noise, broadband amplifier designed to meet a gain of 100dB in a passband of 1-100kHz frequency. </p>
-							<ul class="actions">
-								<li><a href="AMP.html" class="button">Learn more</a></li>
-							</ul>
-						</div>
-					</div>
-				</section>
-				
-				<!-- Project: Veri and Labview -->
-				<!--
-				<section>
-					<a href="" class="image"><img src="" data-position="center center" alt=""/></a>
-					<div class="content">
-						<div class="inner">
-							<h2>VERI Lab</h2>
-							<p>VERI Laboratory</p>
-							<ul class="actions">
-								<li><a href="" class="button">Learn more</a></li>
-							</ul>
-						</div>
-					</div>
-				</section>
-				-->
-				
-				<!-- Project: VGA Cadence -->
-				<section>
-					<a href="VGA.html" class="image"><img src="images/VGA_Schematic.png" data-position="center center" alt=""/></a>
-					<div class="content">
-						<div class="inner">
-							<h2>VGA: Full-Custom IC Design</h2>
-							<p>A Variable Gain Amplifier Design for the Full-Custom IC Design Module. </p>
-							<ul class="actions">
-								<li><a href="VGA.html" class="button">Learn more</a></li>
-							</ul>
-						</div>
-					</div>
-				</section>
-				
-			</section>
-		
 			
-			<!-- Sub Section Two: Skills -->
-			<section id="two" class="wrapper style3 fade-up">
+			<!-- Section Three: Overview / Skills -->
+			<section id="three" class="wrapper style3 fade-up">
 				<div class="inner">
+					
 					<h2>Overview</h2>
 					<p>Here is an overview of my technical skills & strengths:</p>
+										
+					<!-- Skills: Expanded / "Features" -->
+					<div class="features">
+						<section>
+							<span class="icon solid major fa-cog"></span>
+							<h3>LVA & HV Design</h3>
+							<p>Experience with Arduinos, Raspberry Pi's & FPGAs. </p>
+							<p>Proficient with rapid prototyping, PCB design & ...</p>
+						</section>
+						<section>
+							<span class="icon solid major fa-cog"></span>
+							<h3>LVA & HV Design</h3>
+							<p>Experience with Arduinos, Raspberry Pi's & FPGAs. </p>
+							<p>Proficient with rapid prototyping, PCB design & ...</p>
+						</section>
+						<section>
+						  <span class="icon solid major fa-code"></span>
+							<h3>Programming & Software</h3>
+							<p>Programming Languages I have experience with include: C++, Python, MATLAB, Kotlin, Golang, HTML, CSS & Javascript and Verilog;</p>
+							<p>Software packages that I have experience with include: Cadence Virtuoso, LTSpice XVII, MATLAB, Simulink, Android Studio, LabVIEW and Altium CircuitMaker;</p>
+						</section>
+					</div>
 					
+					<!-- Skills: Icons -->
 					<div style="width: 100%; height: 100%; display: flex; justify-content: center; padding: 1%; font-size: 25px; flex-wrap: wrap">
 						
 						<h1 style="padding: 2%;" class="devicon-latex-original"></h1>
@@ -212,72 +104,143 @@
 						<h1 style="padding: 2%;" class="devicon-css3-plain-wordmark colored"></h1>
 						<h1 style="padding: 2%;" class="devicon-javascript-plain colored"></h1>
 -->
-				  </div>
+					</div>
 					
-<!--
-					<div  style="width: 100%; height: 100%; display: flex; justify-content: center; padding: 1%; font-size: 25px;">
+					<!-- Misc Icons -->
+					<!-- <div  style="width: 100%; height: 100%; display: flex; justify-content: center; padding: 1%; font-size: 25px;">
 						<h1 style="padding: 2%;" class="devicon-matlab-plain"></h1>
 						<h1 style="padding: 2%;" class="devicon-android-plain-wordmark"></h1>
 						<h1 style="padding: 2%;" class="devicon-raspberrypi-line"></h1>
 						<h1 style="padding: 2%;" class="devicon-raspberrypi-line-wordmark"></h1>
-					</div>
--->
-					
-				  <div class="features">
-					  <section>
-						  <span class="icon solid major fa-code"></span>
-						  <h3>Programming & Software</h3>
-						  <p>Languages: C++, Python, Verilog, MATLAB, Kotlin, Golang, HTML, CSS & Javascript; </p>
-						  <p>Software: Cadence Virtuoso, LTSpice XVII, MATLAB, Simulink, Android Studio, LabVIEW, Altium CircuitMaker; </p>
-					  </section>
-					  <section>
-						  <span class="icon solid major fa-cog"></span>
-						  <h3>Digital & Analogue Design</h3>
-						  <p>Experience with Arduinos, Raspberry Pi's & FPGAs. </p>
-						  <p>Proficient with rapid prototyping, PCB design & ...</p>
-					  </section>
-					</div>
+					</div> -->
+
 				</div>
 			</section>
+					
+			<!-- Section One: Work Projects -->
+			<section id="one" class="wrapper style2 spotlights">
+
+				<!-- Project: LFAS -->
+				<section>
+					<a href="/XXX.html" class="image"><img src="/images/PLACEHOLDER.png" data-position="25% 25%" alt=""/></a>
+					<div class="content">
+						<div class="inner">
+							<h2>Leeds Flood Alleviation Scheme</h2>
+							<p>XXX</p>
+							<!--<p><i>Skills: NodeRED, Javascript, HTML & CSS</i></p>-->
+							<ul class="actions">
+								<li><a href="/XXX.html" class="button">Learn more</a></li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+				<!-- Project: XXX  -->
+				<section>
+					<a href="/XXX.html" class="image"><img src="images/PLACEHOLDER.png" alt="" data-position="25% 25%" /></a>
+					<div class="content">
+						<div class="inner">
+							<h2>XXX</h2>
+							<p>XXX</p>
+<!--							<p><i>Skills: Python</i></p>-->
+							<ul class="actions">
+							<li><a href="/XXX.html" class="button">Learn more</a></li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				
+				<!-- Project: XXX -->
+				<section>
+					<a href="XXX.html" class="image"><img src="images/PLACEHOLDER.png" alt="" data-position="25% 25%" /></a>
+					<div class="content">
+						<div class="inner">
+							<h2>XXX</h2>
+							<p>XXX</p>
+							<ul class="actions">
+								<li><a href="/XXX.html" class="button">Learn more</a></li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				
+			</section>
 			
-			
-			<!-- Sub Section Three: Education -->
-<!--
-			<section id="three" class="wrapper style2 fade-up">
+			<!-- Section Four: Education -->
+			<section id="four" class="wrapper style2 fade-up">
 				<div class="inner">
 					<h2>Education</h2>
-					<p>Here is a brief summary of my academic history.</p>
+					<p>Here is a brief summary of my academic history:</p>
 					
-					<div style="width: 100%; height: 100%; display:flex; ">
+					<div style="width: 100%; height: 100%; display: flex;">
 					
-						<div style="background-color: #ffffff; margin: 1%; padding: 4%;	border-radius: 10px; box-shadow: 0 3px 26px 0 rgba(0,0,0,0.20); width: 50%; height: 100%;">
-							<img src="images/Logo_for_Imperial_College_London.svg" alt="" data-position="25% 25%" style="width: 70%; margin: 1%;" />
-						
-							<h3 style="color: black; !important">2018 - Present</h3>
-							<p style="color: black; !important">3rd Year Modules: Analogue and Integrated Systems, Biomedical Electronics, Accounting, 
-							<br>1st & 2nd Year Modules:  </p>
-						</div>
-						<div ></div>
-							
-						<div  style="background-color: #ffffff;
-								margin: 1%; padding: 4%; border-radius: 10px; box-shadow: 0 3px 26px 0; rgba(0,0,0,0.20); width: 50%; height: 100%;">
-							<img src="images/logo-header.jpg" alt="" data-position="25% 25%" style="width: 80%; margin: 1%;" />
+						<div style="background-color: #ffffff; margin: 1%; padding: 4%;	border-radius: 10px; box-shadow: 0 3px 26px 0; rgba(0,0,0,0.20); width: 50%; height: 100%;">
+							<img src="images/Logo_for_Imperial_College_London.svg" alt="ICL-Logo" data-position="25% 25%" style="margin: 1%;" height="60"/>
+							<h3 style="color: black; !important">2018 - 2022</h3>
+							<p style="color: black; !important">Integrated Masters (MEng):
+							<br>Electrical & Electronic Engineering</p>
+						</div>							
+						<div  style="background-color: #ffffff; margin: 1%; padding: 4%; border-radius: 10px; box-shadow: 0 3px 26px 0; rgba(0,0,0,0.20); width: 50%; height: 100%;">
+							<img src="images/logo-header.jpg" alt="WoodhouseCollege-Logo" data-position="25% 25%" style="margin: 1%;" height="60"/>
 							<h3 style="color: black; !important">2015 - 2017</h3>
-							<p style="color: black; !important">Mathematics - A*
-							<br>Physics - A
-							<br>Chemistry - A</p>
-							<br>
+							<p style="color: black; !important">A-Levels:
+							<br>Mathematics, Physics & Chemistry</p>
 						</div>
 						
 					</div>
 					
 				</div>
 			</section>
--->
-
 			
-			<!-- Sub Section Four: Contact -->
-			<section id="four" class="wrapper style1 fade-up">
+			<!-- Section Two: Uni Projects -->
+			<section id="two" class="wrapper style2 spotlights">
+	
+				<!-- Project: VNA -->
+				<section>
+					<a href="VNA.html" class="image"><img src="images/VNAoverview.png" alt="" data-position="" /></a>
+					<div class="content">
+						<div class="inner">
+							<h2>Vector Network Analyser</h2>
+							<p>A Vector Network Anaylser designed and simulated on LTSpice and MATLAB. Designed to calculate the Y and Z parameters of 2 port / 3 terminal devices. </p>
+							<ul class="actions">
+								<li><a href="/VNA.html" class="button">Learn more</a></li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				
+				<!-- Project: AMP -->
+				<section>
+					<a href="AMP.html" class="image"><img src="images/AMP/Amp1.jpeg" data-position="center center" alt=""/></a>
+					<div class="content">
+						<div class="inner">
+							<h2>AMP Lab</h2>
+							<p>A high gain, low-noise, broadband amplifier designed to meet a gain of 100dB between a passband of 1-100kHz and produced with discrete components on breadboard. </p>
+							<ul class="actions">
+								<li><a href="AMP.html" class="button">Learn more</a></li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				
+				<!-- Project: VGA Cadence -->
+				<section>
+					<a href="VGA.html" class="image"><img src="images/VGA_Schematic.png" data-position="center center" alt=""/></a>
+					<div class="content">
+						<div class="inner">
+							<h2>Variable Gain Amplifier</h2>
+							<p>A Variable Gain Amplifier design that was produced in Cadence Virtuoso, complete with a Full-Custom-IC layout. </p>
+							<ul class="actions">
+								<li><a href="VGA.html" class="button">Learn more</a></li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				
+			</section>
+			
+			<!-- Section Five: Contact -->
+			<section id="five" class="wrapper style1 fade-up">
 				<div class="inner">
 					<h2>Get in touch</h2>
 					<section>
@@ -286,12 +249,10 @@
 								<h3>Email</h3>
 								<a href="#">email@email.com</a>
 							</li>
-<!--
-							<li>
+							<!-- <li>
 								<h3>CV</h3>
 								<a href="assets/CV.pdf" class="button primary icon solid fa-download" >Download CV</a>
-							</li>
--->
+							</li> -->
 						</ul>
 					</section>
 				</div>
@@ -303,7 +264,7 @@
 		<footer id="footer" class="wrapper style1-alt">
 			<div class="inner">
 				<ul class="menu">
-					<li>&copy; All rights reserved | Nasim MM</li>
+					<li>&copy; All rights reserved | Nasim M</li>
 				</ul>
 			</div>
 		</footer>
