@@ -33,47 +33,59 @@
 			<section id="main" class="wrapper">
 				<div class="inner">
 					
-					<h1 class="major">Memristors & Reconfigurable Analogue Filters</h1>
+					<h1 class="major">Memristors & Reconfigurable Analogue Filters (Thesis)</h1>
 					
-					<h2>Abstract</h2>
-					<p>My undergraduate thesis explored the application of memristors to reconfigurable analogue filters. </p>
-					
-					<h2>Memristors</h2>
-					
-					<p>Memristors are non-linear two terminal devices with variable resistance, initially theorised by L. Chua in 1971 [4]. The memristor supposedly closes the gap between the fundamental relationships among the circuit measurements (voltage, current, charge and flux) and completes the missing relationship between electric charge and magnetic flux linkage. Memristor technology is still in its infancy as the first practical implementations were only fabricated relatively recently in 2008. Various potential applications of memristors are being worked on including Resistive-RAM (ReRAM/RRAM), Neuro-memristive AI/memristive neural networks, digital logic gates, cross-bar arrays and others, however none have proven commercially viable yet. Memristors applied in the analogue sphere could pave the way for simpler variable resistor designs with continuous tuning.</p>
-					
-					<span class="image fit"><img src="images/Thesis/Picture3.png" alt=""/></span>
+					<h2>What are Memristors?</h2>
 					
 					<div style="display: flex; width: 100%; height: 100%;">
-						
-						<span class="image fit" style="padding: 1%;"><img src="images/Thesis/Picture2.png" alt="A" style="height: auto; max-width: 100%; max-height: 100%"/></span>
-						
-						<span class="image fit" style="padding: 1%;"><img src="images/Thesis/Picture1.png" alt="A" style="height: auto; max-width: 100%; max-height: 100%"/></span>
-						
+						<div style="width: 50%; padding: 1%;">
+							<p>Memristors have the following properties:</p>
+							<ul>
+								<li style="list-style-type: square">Fundamental, Two terminal devices</li>
+								<li style="list-style-type: square">Relates flux and charge: <i>d &phi; = M &sdot; dq</i></li>
+								<li style="list-style-type: square">Passive: <i>P(t) = I(t) &sdot; V(t) = I<sup>2</sup>(t)&sdot; M(q(t))</i> </li>
+								<li style="list-style-type: square">Analogue - Time dependent, time varying</li>
+								<li style="list-style-type: square">Non-linear</li>
+								<li style="list-style-type: square">Stimuli dependent - the present state depends on the previous state</li>
+							</ul>
+							Figure on the Right: Illustration showing the relationships between the fundamental circuit measurement parameters and the fundamental circuit components. The fourth fundamental component is claimed to be the memristor.
+						</div>
+						<div style="max-width: 50%; width:auto; padding: 2%;">
+							<span class="image fit"><img src="images/Thesis/Picture4.png" alt=""/></span>
+						</div>
 					</div>
+					
+					<!-- <div style="display: flex; width: 100%; height: 100%;">
+						<span class="image fit" style="padding: 1%;"><img src="images/Thesis/Picture1.png" alt="A" style="height: auto; max-width: 100%; max-height: 100%"/></span>
+						<span class="image fit" style="padding: 1%;"><img src="images/Thesis/Picture2.png" alt="A" style="height: auto; max-width: 100%; max-height: 100%"/></span>
+					</div> -->
+					
+					<h3>How do they operate?</h3>
+					<span class="image fit"><img src="images/Thesis/Operation.gif" alt=""/></span>
+					<p>Short pulses across the device causes the boundary between the doped layers to move and thus the <i>memristance</i> to change.</p>
+					
+					<h3>Problem?</h3>
+					<span class="image fit"><img src="images/Thesis/Problem.gif" alt=""/></span>
+					<p></p>
 
 					<h2>Memristor Programming Schemes</h2>
-					
 					<p>Programming schemes: </p>
 					
 					<h3>Method 1</h3>
-					
 					<p>The first programming method explored was using a balanced H-bridge with PWM pulsing of alternate switch pairs.</p>
-					
 					<span class="image fit"><img src="images/Thesis/Method2BlockDiagrInternals.png" alt="A" /></span>
-					
 					<p></p>
 					
 					<h3>Method 2</h3>
-					
 					<p>The second method exploits the function </p>
+					<span class="image fit"><img src="images/Thesis/Method2-1.png" alt=""/></span>
+					<span class="image fit"><img src="images/Thesis/Method2-2.png" alt=""/></span>
+					<p></p>
 					
-					<span></span>
+					
 					
 					<h2>Reconfigurable Analogue Filters</h2>
-					
 					<p>Reconfigurable Filters:</p>
-					
 					<span class="image fit"><img src="images/Thesis/FilterInternalv3.png" alt=""/></span>
 					
 				</div>
