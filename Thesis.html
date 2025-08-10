@@ -66,27 +66,34 @@
 					
 					<h3>Problem?</h3>
 					<span class="image fit"><img src="images/Thesis/Problem.gif" alt=""/></span>
-					<p></p>
+					<p>Applying a constant DC current, such as in a biased circuit, leads to the boundary between the doped layers to be forced on one side.   </p>
 
 					<h2>Memristor Programming Schemes</h2>
-					<p>Programming schemes: </p>
+					<p>The following schemes are devised to enable incorporation of memristors into reconfigurable analogue filters. The first method attempts to implement memristors directly in the signal path. The second method implements a memristor in a "bias generation" block that outputs a bias current.</p>
 					
 					<h3>Method 1</h3>
 					<p>The first programming method explored was using a balanced H-bridge with PWM pulsing of alternate switch pairs.</p>
-					<span class="image fit"><img src="images/Thesis/Method2BlockDiagrInternals.png" alt="A" /></span>
-					<p></p>
+					<span class="image fit"><img src="images/Thesis/Method2BlockDiagrInternals.png" alt="" /></span>
+					<p>Memristor state (and therefore the "memristance") becomes a function of duty cycle. Adjusting the duty cycle moves the position of the boundary and increases or decreases the overal resistance.</p>
 					
 					<h3>Method 2</h3>
-					<p>The second method exploits the function </p>
+					<p>The second method exploits the operating principle of an inverting Op-amp. </p>
 					<span class="image fit"><img src="images/Thesis/Method2-1.png" alt=""/></span>
 					<span class="image fit"><img src="images/Thesis/Method2-2.png" alt=""/></span>
 					<p></p>
 					
-					
-					
-					<h2>Reconfigurable Analogue Filters</h2>
-					<p>Reconfigurable Filters:</p>
+					<h3>Incorporation into Reconfigurable Filters</h3>
+					<p></p>
+					<span class="image fit"><img src="images/Thesis/Incorporation.gif" alt=""/></span>
+					<p>These bias generation blocks can then be used in reconfiugrable analogue filters like so:</p>
 					<span class="image fit"><img src="images/Thesis/FilterInternalv3.png" alt=""/></span>
+					<p>The bias generation blocks can be used as handles on operational transconductance filters to tune the characteristics and achieve filters of desired characterstics.</p>
+					
+					<h3>Conclusion</h3>
+					<p>Is it possible?</p>
+					<p>It is possible to incorporate memristor technology into reconfigurable analogue filter technology.</p>
+					<p>Is it worthwhile?</p>
+					<p>However, memristor technology is an immature technology, still in its infancy and may say significant changes in how it is fabricated and functions. The present implementations of memristor technologt are not amenable to in-circuit use in biased circuits. The techniques presented above, to incorporate memristors into biased circuits are component intensive, complex and excessive. Existing methods using voltage control are much more convenient. </p>
 					
 				</div>
 			</section>
