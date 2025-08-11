@@ -35,14 +35,13 @@
 					
 					<h1 class="major">Memristors & Reconfigurable Analogue Filters (Thesis)</h1>
 					
-					<h2>What are Memristors?</h2>
-					
 					<div style="display: flex; width: 100%; height: 100%;">
 						<div style="width: 50%; padding: 1%;">
+							<h2>What are Memristors?</h2>
 							<p>Memristors have the following properties:</p>
 							<ul>
 								<li style="list-style-type: square">Fundamental, Two terminal devices</li>
-								<li style="list-style-type: square">Relates flux and charge: <i>d &phi; = M &sdot; dq</i></li>
+								<li style="list-style-type: square">Relates flux and charge: <i>d&phi; = M &sdot; dq</i></li>
 								<li style="list-style-type: square">Passive: <i>P(t) = I(t) &sdot; V(t) = I<sup>2</sup>(t)&sdot; M(q(t))</i> </li>
 								<li style="list-style-type: square">Analogue - Time dependent, time varying</li>
 								<li style="list-style-type: square">Non-linear</li>
@@ -55,18 +54,20 @@
 						</div>
 					</div>
 					
-					<!-- <div style="display: flex; width: 100%; height: 100%;">
+<!--
+					 <div style="display: flex; width: 100%; height: 100%;">
 						<span class="image fit" style="padding: 1%;"><img src="images/Thesis/Picture1.png" alt="A" style="height: auto; max-width: 100%; max-height: 100%"/></span>
 						<span class="image fit" style="padding: 1%;"><img src="images/Thesis/Picture2.png" alt="A" style="height: auto; max-width: 100%; max-height: 100%"/></span>
-					</div> -->
+					</div> 
+-->
 					
 					<h3>How do they operate?</h3>
 					<span class="image fit"><img src="images/Thesis/Operation.gif" alt=""/></span>
-					<p>Short pulses across the device causes the boundary between the doped layers to move and thus the <i>memristance</i> to change.</p>
+					<p>Short pulses across the device causes the interface between the doped layers to move and thus the <i>memristance</i> to change.</p>
 					
 					<h3>Problem?</h3>
 					<span class="image fit"><img src="images/Thesis/Problem.gif" alt=""/></span>
-					<p>Applying a constant DC current, such as in a biased circuit, leads to the boundary between the doped layers to be forced on one side.   </p>
+					<p>When a constant DC current is applied - such as in a biased circuit - the interface between the doped layers is displaced towards one side, driven by the directional flow of charge carriers.</p>
 
 					<h2>Memristor Programming Schemes</h2>
 					<p>The following schemes are devised to enable incorporation of memristors into reconfigurable analogue filters. The first method attempts to implement memristors directly in the signal path. The second method implements a memristor in a "bias generation" block that outputs a bias current.</p>
@@ -77,14 +78,14 @@
 					<p>Memristor state (and therefore the "memristance") becomes a function of duty cycle. Adjusting the duty cycle moves the position of the boundary and increases or decreases the overal resistance.</p>
 					
 					<h3>Method 2</h3>
-					<p>The second method exploits the operating principle of an inverting Op-amp. </p>
+					<p>The second method exploits the operating principle of an inverting Op-amp where a virtual ground is created at the input terminals. </p>
 					<span class="image fit"><img src="images/Thesis/Method2-1.png" alt=""/></span>
-					<p>...</p>
+					<p>By rectifying and filtering the output of an Auto-Balancing Bridge (ABB), a bias current can be extracted. </p>
 					<span class="image fit"><img src="images/Thesis/Method2-2.png" alt=""/></span>
-					<p></p>
+					<p>By pulsing the memristor in a similar manner to method 1, the memristance can be adjusted thereby adjusting the bias current. </p>
 					
 					<h3>Incorporation into Reconfigurable Filters</h3>
-					<p>...</p>
+					<p>Memristors can be incorporated into analogue filters by first using a programming scheme to create a programming block. This programming block can then be inorporated into a bias generation scheme to be used as a handle on a Transconductance based filter. </p>
 					<span class="image fit"><img src="images/Thesis/Incorporation.gif" alt=""/></span>
 					<p>These bias generation blocks can then be used in reconfiugrable analogue filters like so:</p>
 					<span class="image fit"><img src="images/Thesis/FilterInternalv3.png" alt=""/></span>
