@@ -74,21 +74,21 @@
 					
 					<h3>Method 1</h3>
 					<p>The first programming method explored was using a balanced H-bridge with PWM pulsing of alternate switch pairs.</p>
-					<span class="image fit"><img src="images/Thesis/Method2BlockDiagrInternals.png" alt="" /></span>
+					<span class="image fit" style="padding: 0 25%;"><img src="images/Thesis/Method2BlockDiagrInternals.png" alt="" /></span>
 					<p>Memristor state (and therefore the "memristance") becomes a function of duty cycle. Adjusting the duty cycle moves the position of the boundary and increases or decreases the overal resistance.</p>
 					
 					<h3>Method 2</h3>
 					<p>The second method exploits the operating principle of an inverting Op-amp where a virtual ground is created at the input terminals. This would remove the memristor from the signal path and prevent any interface drift due to it. </p>
-					<span class="image fit"><img src="images/Thesis/Method2-1.png" alt=""/></span>
+					<span class="image fit" style="padding: 0 15%;"><img src="images/Thesis/Method2-1.png" alt=""/></span>
 					<p>By rectifying and filtering the output of an Auto-Balancing Bridge (ABB), a bias current can be extracted. </p>
-					<span class="image fit"><img src="images/Thesis/Method2-2.png" alt=""/></span>
+					<span class="image fit" style="padding: 0 15%;"><img src="images/Thesis/Method2-2.png" alt=""/></span>
 					<p>By pulsing the memristor in a similar manner to method 1, the memristance can be adjusted thereby adjusting the bias current. </p>
 					
 					<h3>Incorporation into Reconfigurable Filters</h3>
 					<p>Memristors can be incorporated into analogue filters by first using a programming scheme to create a programming block. This programming block can then be inorporated into a bias generation scheme to be used as a handle on a Transconductance based filter. </p>
 					<span class="image fit"><img src="images/Thesis/Incorporation.gif" alt=""/></span>
 					<p>These bias generation blocks can then be used in reconfiugrable analogue filters like so:</p>
-					<span class="image fit"><img src="images/Thesis/FilterInternalv3.png" alt=""/></span>
+					<span class="image fit" style="padding: 0 25%;"><img src="images/Thesis/FilterInternalv3.png" alt=""/></span>
 					<p>The bias generation blocks can be used as handles on operational transconductance filters to tune the characteristics and achieve filters of desired characterstics.</p>
 					
 					<h3>Conclusion</h3>
